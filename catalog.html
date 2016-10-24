@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Барбершоп</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html">
+      <img src="img/logo.png" alt="Барбершоп">
+    </a>
+    <nav class="main-navigation">
+      <ul class="main-navigation__items">
+        <li class="main-navigation__item">
+          <a href="#">Информация</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#">Новости</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#">Прайс-лист</a>
+        </li>
+        <li class="main-navigation__item main-navigation__item--active">
+          <a href="#">Магазин</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__user-block">
+      <a href="#">Вход</a>
+    </div>
+  </header>
+  <section class="breadcrumbs">
+    <h1 class="breadcrumbs__title">Средства для ухода</h1>
+    <ul class="breadcrumbs__links">
+      <li class="breadcrumbs__link">
+        <a href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs__link">
+        <a href="#">Магазин</a>
+      </li>
+      <li class="breadcrumbs__link breadcrumbs__link--active">
+        <a href="#">Средства для ухода</a>
+      </li>
+    </ul>
+  </section>
+  <aside class="filter">
+    <form action="#" method="post" class="filter__items">
+      <div class="filter__item filter__item--producer">
+        <h2 class="filter__title">Производители:</h2>
+        <label class="filter__checkbox">
+          <input type="checkbox" name="baxter-of-california">
+          <span>Baxter of california</span>
+        </label>
+        <label class="filter__checkbox">
+          <input type="checkbox" name="mr-natty">
+          <span>Mr natty</span>
+        </label>
+        <label class="filter__checkbox">
+          <input type="checkbox" name="suavecito">
+          <span>Suavecito</span>
+        </label>
+        <label class="filter__checkbox">
+          <input type="checkbox" name="malin+goetz">
+          <span>Malin+goetz</span>
+        </label>
+        <label class="filter__checkbox">
+          <input type="checkbox" name="american-crew">
+          <span>American crew</span>
+        </label>
+      </div>
+      <div class="filter__item filter__item--product-type">
+        <h2 class="filter__title">Группы товаров:</h2>
+        <label class="filter__toggle">
+          <input type="radio" name="product-type" value="shaving">
+          <span>Бритвенные принадлежности</span>
+        </label>
+        <label class="filter__toggle">
+          <input type="radio" name="product-type" value="care" checked>
+          <span>Средства для ухода</span>
+        </label>
+        <label class="filter__toggle">
+          <input type="radio" name="product-type" value="accessories">
+          <span>Аксессуары</span>
+        </label>
+      </div>
+      <input type="submit" value="Показать" class="filter__button">
+    </form>
+  </aside>
+  <section class="products">
+    <article class="products__item">
+      <a href="#" class="products__link">
+        <img src="img/travel-kit.png" alt="Набор для путешествий">
+        <h1 class="products__name">Набор для путешествий "Baxter of california"</h1>
+      </a>
+      <div class="products__button">
+        <span>2 900 руб.</span>
+        <a href="#">Купить</a>
+      </div>
+    </article>
+    <article class="products__item">
+      <a href="#" class="products__link">
+        <img src="img/moisture.png" alt="Увлажняющий кондиционер">
+        <h1 class="products__name">Увлажняющий кондиционер "Baxter of california"</h1>
+      </a>
+      <div class="products__button">
+        <span>750 руб.</span>
+        <a href="#">Купить</a>
+      </div>
+    </article>
+    <article class="products__item">
+      <a href="#" class="products__link">
+        <img src="img/suavecito-gel.png" alt="Гель для волос">
+        <h1 class="products__name">Гель для волос "Suavecito"</h1>
+      </a>
+      <div class="products__button">
+        <span>290 руб.</span>
+        <a href="#">Купить</a>
+      </div>
+    </article>
+    <article class="products__item">
+      <a href="#" class="products__link">
+        <img src="img/clay.png" alt="Глина для укладки волос">
+        <h1 class="products__name">Глина для укладки волос "American crew"</h1>
+      </a>
+      <div class="products__button">
+        <span>500 руб.</span>
+        <a href="#">Купить</a>
+      </div>
+    </article>
+    <article class="products__item">
+      <a href="#" class="products__link">
+        <img src="img/ac-gel.png" alt="Гель для волос">
+        <h1 class="products__name">Гель для волос "American crew"</h1>
+      </a>
+      <div class="products__button">
+        <span>300 руб.</span>
+        <a href="#">Купить</a>
+      </div>
+    </article>
+    <article class="products__item">
+      <a href="#" class="products__link">
+        <img src="img/shaving.png" alt="Набор для бритья">
+        <h1 class="products__name">Набор для бритья "Baxter of california"</h1>
+      </a>
+      <div class="products__button">
+        <span>3 900 руб.</span>
+        <a href="#">Купить</a>
+      </div>
+    </article>
+    <ul class="products__pages">
+      <li class="products__page">
+        <a href="#">1</a>
+      </li>
+      <li class="products__page products__page--active">
+        <a href="#">2</a>
+      </li>
+      <li class="products__page">
+        <a href="#">3</a>
+      </li>
+      <li class="products__page">
+        <a href="#">4</a>
+      </li>
+    </ul>
+  </section>
+  <footer class="footer">
+    <p class="footer__contacts">
+      Барбершоп "Бородинский" Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      <a href="#">Как нас найти?</a> Телефон: +7 (495) 666-02-66
+    </p>
+    <div class="footer__social">
+      <h2 class="footer__title">Давайте дружить!</h2>
+      <a href="https://vk.com/htmlacademy" class="footer__link footer__link--vk">
+        <img src="img/vk.png" alt="vk">
+      </a>
+      <a href="https://www.facebook.com/htmlacademy" class="footer__link footer__link--fb">
+        <img src="img/fb.png" alt="fb">
+      </a>
+      <a href="https://www.instagram.com/htmlacademy/" class="footer__link footer__link--in">
+        <img src="img/instagram.png" alt="instagram">
+      </a>
+    </div>
+    <div class="footer__developer">
+      <h2 class="footer__title">Разработано:</h2>
+      <a href="https://htmlacademy.ru/" class="footer__link footer__link--htmlacademy">
+        <img src="img/htmlacademy.png" alt="HTML Academy">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
